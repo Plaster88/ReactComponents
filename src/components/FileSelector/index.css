@@ -1,0 +1,57 @@
+.leftPanel {
+  box-sizing: border-box;
+  padding: 15px;
+  display: inline-block;
+  width: 130px;
+  font-size: 0;
+}
+
+.leftPanel .previewPlayer {
+  margin-bottom: 15px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.leftPanel .clickableArea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.fileView {
+  box-sizing: border-box;
+  padding: 15px;
+  display: inline-block;
+  width: 700px;
+  height: 450px;
+  font-size: 0;
+  vertical-align: top;
+}
+
+.leftPanel img  {
+  width: 100px;
+  height: 100px;
+}
+
+.fileView img  {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .leftPanel {
+    padding: 10px;
+    width: 120px;
+  }
+
+  .fileView {
+    width: calc(100% - 120px);
+    padding: 10px 10px 10px 0;
+    height: auto;
+    min-height: 350px;
+  }
+}
