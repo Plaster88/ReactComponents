@@ -9,19 +9,27 @@ import 'react-magic-slider-dots/dist/magic-dots.css';
 import './index.css';
 
 export default class FileSelector extends Component {
-  state = {
+  /*state = {
     files: [],
     activeFile: {}
+  }*/
+
+  state = { files: [ { url: 'https://www.youtube.com/watch?v=5aF_fLNcnAk', type: 'video' },
+    { url: 'https://www.youtube.com/watch?v=yP6VGTtRgMI', type: 'video' },
+    { url: 'https://bipbap.ru/wp-content/uploads/2017/10/0_8eb56_842bba74_XL-640x400.jpg', type: 'image' },
+    { url: 'https://www.youtube.com/watch?v=yP6VGTtRgMI', type: 'video' },
+    { url: 'https://bipbap.ru/wp-content/uploads/2017/10/0_8eb56_842bba74_XL-640x400.jpg', type: 'image' } ],
+    activeFile: { url: 'https://www.youtube.com/watch?v=5aF_fLNcnAk', type: 'video' } 
   }
 
-  componentDidMount() {
+  /*componentDidMount() {
     const api = ``;
     axios.get(`${api}`)
       .then(res => {
         const files = res.product_urls;
         this.setState({ files, activeFile: files[0] });
       })
-  }
+  }*/
 
   showFile(file) {
     this.setState({ activeFile: file });
