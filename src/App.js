@@ -7,8 +7,6 @@ function App() {
   return (
     <div className="App">
       <FileSelector />
-      <hr />
-      <LazySlider />
     </div>
   );
 }

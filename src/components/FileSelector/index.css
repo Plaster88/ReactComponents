@@ -51,22 +51,34 @@
 }
 
 @media only screen and (max-device-width: 1024px) {
-  .desctopView {
-    display: none;
-  }
-  
-  .mobileView {
-    display: block;
+  .leftPanel {
+    width: 100%;
+    padding: 0;
+    white-space: nowrap;
   }
 
-  .mobileView .previewPlayer {
+  .fileView {
+    display: none;
+  }
+
+  .leftPanel {
+    width: 100%;
+    padding: 0;
+  }
+
+  .clickableArea {
+    display: none;
+  }
+
+  .leftPanel .previewPlayer {
     margin-bottom: 0;
     width: 100%;
     height: 300px;
+    display: inline-block;
   }
 
-  .mobileView .previewPlayer img {
+  .leftPanel img {
     width: 100%;
-    height: 100%;
+    height: 300px;
   }
 }

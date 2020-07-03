@@ -49,7 +49,6 @@ export default class FileSelector extends Component {
     };
     return (
       <div className='selectorContainer'>
-        <div className='desctopView'>
           <div className='leftPanel'>
             { this.state.files.map(file => 
               (
@@ -71,22 +70,6 @@ export default class FileSelector extends Component {
               <img alt='' src={this.state.activeFile.url} />
             )}
           </div>
-        </div>
-        <div className='mobileView'>
-          <Slider {...settings}>
-            { this.state.files.map(file => 
-              (
-                <div key={file.url} className='previewPlayer'>
-                  {file.type === 'video' ? (
-                    <ReactPlayer width='100%' height='100%' url={file.url} />
-                  ) : (
-                    <img alt='' src={file.url} />
-                  )}
-                </div>
-              )
-            )}
-          </Slider>
-        </div>
       </div>
     )
   }
